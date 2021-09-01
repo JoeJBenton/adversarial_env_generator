@@ -4,25 +4,28 @@ CHAI internship project with Michael Dennis.
 
 ## List of files
 
+#### environment_class_template.py
+A template definiton of an environment class that demonstrates the essential properties that an environment class must have in order to work with SeparatorEnv. Also explains the core functionality of all the elements of an environment class.
+
 #### mini_grid_env.py
-Defines a more complex mini grid environment space. The environment space contains 48 possible mazes, all with a T-shape wall in the centre dividing the maze into two chambers.
+Defines a more complex mini grid environment class. The environment space contains 48 possible mazes, all with a T-shape wall in the centre dividing the maze into two chambers.
 (Also contains some testing code to check that a single agent trains in this environment as expected.)
 
 #### multi_bit_env.py
-Defines a multi-bit guessing environment.
+Defines a multi-bit guessing environment class.
 
 #### sequential_multi_bit_env.py
-Defines a multi-bit guessing environment where the antagonist/protagonist guess at each bit sequentially.
+Defines a multi-bit guessing environment class where the antagonist/protagonist guess at each bit sequentially.
 
 #### separator_wrapper.py
 Defines the central separator (builder/describer/antagonist/protagonist) environment as a MultiAgentEnv.
 
 #### simple_mini_grid_env.py
-Defines a mini grid environment space with two possible environments with the goal in the bottom left and bottom right respectively.
+Defines a mini grid environment class with two possible environments with the goal in the bottom left and bottom right respectively.
 (Also contains some testing code to check that a single agent trains in this environment as expected.)
 
 #### single_bit_env.py
-Defines a single-bit guessing environment.
+Defines a single-bit guessing environment class.
 
 #### test.py
 Contains the code necessary to configure, produce and log training runs.
