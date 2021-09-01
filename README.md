@@ -32,24 +32,18 @@ Defines the UniformBuilder and PerfectDescriber policies that can be used for de
 
 ## Configuration Options
 
-#### double_antagonist
-If false, run with a single antagonist agent that receives a single-bit observation from the describer along with the environment. If true, run with two angtagonist agents where one of the two is chosen for each roll out depending on the bit given by the describer.
+**double_antagonist**: If false, run with a single antagonist agent that receives a single-bit observation from the describer along with the environment. If true, run with two angtagonist agents where one of the two is chosen for each roll out depending on the bit given by the describer.
 
-#### test_policies
-**uniform_builder:** If true, fixes the builder's policy to be a uniform sample from the environment class.
+**test_policies**:  
+- **uniform_builder:** If true, fixes the builder's policy to be a uniform sample from the environment class.
+- **perfect_describer:** If true, fixes the describer's policy to be that given by the optimal_partition function of the environment class. (So, by editing optimal_partition, you can fix and customise the policy of the describer.)
 
-**perfect_describer:** If true, fixes the describer's policy to be that given by the optimal_partition function of the environment class. (So, by editing optimal_partition, you can fix and customise the policy of the describer.)
+**environment_class**: A string that determines which environment class will be used as the base for the algorithm. (The string is converted to a environment class using env_string_to_env_class.)
 
-#### environment_class:
-A string that determines which environment class will be used as the base for the algorithm. (The string is converted to a environment class using env_string_to_env_class.)
+**start_from_checkpoint**:
+- **checkpoint_address**: The folder that the checkpoint will be loaded from.
+- **iteration_number**: The epoch corresponding to the checkpoint to be loaded.
 
-#### start_from_checkpoint:
-**checkpoint_address:** The folder that the checkpoint will be loaded from.
+**iterations**: The number of iterations to train for.
 
-**iteration_number:** The epoch corresponding to the checkpoint to be loaded.
-
-#### iterations:
-The number of iterations to train for.
-
-#### sample_size:
-The number of roll outs to be used when generating logs.
+**sample_size**: The number of roll outs to be used when generating logs.
