@@ -9,7 +9,7 @@ Defines a more complex mini grid environment space. The environment space contai
 (Also contains some testing code to check that a single agent trains in this environment as expected.)
 
 #### multi_bit_env.py
-Defines a multi-bit guessing environment
+Defines a multi-bit guessing environment.
 
 #### sequential_multi_bit_env.py
 Defines a multi-bit guessing environment where the antagonist/protagonist guess at each bit sequentially.
@@ -30,7 +30,7 @@ Contains the code necessary to configure, produce and log training runs.
 #### test_policies.py
 Defines the UniformBuilder and PerfectDescriber policies that can be used for debugging.
 
-## Configuration Options
+## Config options
 
 **double_antagonist**: If false, run with a single antagonist agent that receives a single-bit observation from the describer along with the environment. If true, run with two angtagonist agents where one of the two is chosen for each roll out depending on the bit given by the describer.
 
